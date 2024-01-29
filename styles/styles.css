@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+}
+
+
+.header-inner{
+    display: flex;
+    flex-direction: column;
+    height:30vh;
+    width: 100%;
+    background:  rgba(53,135,164,1);
+    background-image: linear-gradient(
+        to top,
+        rgba(211, 211, 211, .7) 25%,
+        rgba(211, 211, 211, 0.3) 50%, 
+        rgba(0, 0, 0, 0.2) 100%
+    );
+}
+.p1 {
+    float: left;
+    color: #1717179a;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5%;
+    margin-top: 2%;
+
+}
+.p2 {
+    max-height: 10%;
+    margin-top: 2%;
+    font-size: 3rem;
+    font-weight:600 ;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    color: rgba(0, 0, 0, 0.599);
+}
+.p3 {
+    margin-top: 3%;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-left: 50%;
+    min-width: 150px;
+    color:rgba(0, 0, 0, 0.599);
+}
+
+
+
+.profile-container {
+    display: flex;
+}
+.nav-inner{
+}
+.profile-picture {
+    margin-left: 10%;
+    margin-right: 5%;
+    max-width: 200vw;
+}
+.picture-profile{
+    object-fit: contain;
+    min-width: 200px;
+    max-width: 300px;
+}
+.about-me-header {
+    margin-bottom: 30px;
+}
+.about-me,.skills-container, .about-me-header,.image-container, .footer-info{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 20%;
+    max-width: 200vw;
+}
+.text > p {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.skills-container, .project-container,.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.unorder-list-container {
+    list-style-type: circle;
+}
+.list-items {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.image-container{
+    max-height: 350px;
+    max-width: 350px;
+    
+}
+
+.project-container {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.clone-container {
+    text-align: center;
+    transition: transform 2s;
+}
+.project-description {
+    display: none;
+    margin-top: 50px;
+    margin-left: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 77%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1rem;
+    overflow-y: auto;
+}
+
+.project-description::-webkit-scrollbar
+{
+  background-color: #D3D3D3;
+}
+.project-description::-webkit-scrollbar-thumb {
+    background-color: #808080; /* color of the thumb */
+}
+.clone-container:hover {
+    transform: scale(1.2);
+}
+
+.test:hover .project-description {
+    opacity: 1;
+}
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.github{
+    max-height: 50px;
+    min-width: 50px;
+}
+.linkedin{
+    max-height: 50px;
+    min-width: 50px;
+}
+.footer-header {
+    margin-left: 10%;
+}
+.class-footer{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.social-images {
+    object-fit: contain;
+    height:100%;
+}
+.email-number {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    justify-content: space-between;
+    
+}
+
+.text-footer {
+    font-weight: 900;
+    
+}
+.email {
+    margin-right: 30px;
+    text-wrap: 10px;
+    font-size: 1rem;
+}
+.phone-number {
+    padding-right: 5%;
+    font-size: 1rem;
+}
